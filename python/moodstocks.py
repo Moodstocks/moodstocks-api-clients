@@ -111,7 +111,7 @@ class APIClient:
         files = None
         if filename:
             with open(filename, 'rb') as f:
-                files = {'image_file': (os.path.basename(filename), f.read())}
+                files = {'image_file': ('ref.jpg', f.read())}
 
         params = None
         if image_url:
@@ -201,7 +201,7 @@ class APIClient:
         files = None
         if filename:
             with open(filename, 'rb') as f:
-                files = {'image_file': (os.path.basename(filename), f.read())}
+                files = {'image_file': ('qry.jpg', f.read())}
 
         params = None
         if image_url:
